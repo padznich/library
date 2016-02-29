@@ -51,6 +51,12 @@ urlpatterns = [
     # app_db_view
     url(r'^app_db/$', views.app_db_list),
     url(r'^app_db/(?P<pk>[0-9]+)$', views.app_db_detail),
+
+    url(r'^capp_db/$', views.AppdbList.as_view()),
+    url(r'^capp_db/(?P<pk>[0-9]+)$', views.AppdbDetail.as_view()),
+
+    url(r'^sapp_db/$', views.SnippetList.as_view()),
+    url(r'^sapp_db/(?P<pk>[0-9]+)$', views.SnippetDetail.as_view()),
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)
