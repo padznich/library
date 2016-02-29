@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # my apps
-
+    'app_db',
 ]
 
 MIDDLEWARE_CLASSES = [
